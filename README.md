@@ -22,7 +22,8 @@ Dejé en la misma carpeta un archivo [main.go](productor_consumidor/main.go). Es
 
 ## Uso
 Todas las carpetas tienen un link al Makefile en root. Estando en cualquiera de las carpetas, hacer `make` compila todos los .c que encuentre, tiene que estar instalado make y gcc. Probé los programas en la [vm](https://docs.utnso.com.ar/recursos/vms#ubuntu-server-64-bit), en windows 11 y en un derivado de ubuntu y andaba.
-## Derechos de Autor este repo lo cree con el fin de hacer un seguimiento de los ejercicio que voy haciendo ojala vaya a final aura?
-El god que cree este repo es de :  https://github.com/EliasMartinMouescaUTN
-
+## Derechos de Autor 
+Este repo lo cree con el fin de hacer un seguimiento de los ejercicio que voy haciendo ojala vaya a final.
+El god que creeo este repo es :https://github.com/EliasMartinMouescaUTN
+Pueden encontrar el template en :https://github.com/EliasMartinMouescaUTN/EjerciciosSincro.git
 # EjerciciosByDonkForSO
