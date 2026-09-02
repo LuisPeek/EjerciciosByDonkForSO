@@ -21,5 +21,8 @@ Si comentamos el _signal_ de tareas pendientes, el productor ejecuta hasta que l
 Dejé en la misma carpeta un archivo [main.go](productor_consumidor/main.go). Está ahí para ser un punto de comparación entre C y Go. [main.go](productor_consumidor/main.go) hace, en un principio, lo mismo que [main.c](productor_consumidor/main.c) pero mejor y con menos líneas, usando los canales de go. Se puede correr con `go run main.go` (tiene que estar go instalado).
 
 ## Uso
-Todas las carpetas tienen un link al Makefile en root. Estando en cualquiera de las carpetas, hacer `make` compila todos los .c que encuentre, tiene que estar instalado make y gcc. Probé los programas en la [vm](https://docs.utnso.com.ar/recursos/vms#ubuntu-server-64-bit), en windows 11 y en un derivado de ubuntu y andaba, cualquier cosa me hablan por [telegram](https://t.me/eliasmouesca) o por [mail](mailto:emouesca@frba.utn.edu.ar), cualquier idea también es bienvenida.
+Todas las carpetas tienen un link al Makefile en root. Estando en cualquiera de las carpetas, hacer `make` compila todos los .c que encuentre, tiene que estar instalado make y gcc. Probé los programas en la [vm](https://docs.utnso.com.ar/recursos/vms#ubuntu-server-64-bit), en windows 11 y en un derivado de ubuntu y andaba.
+## Derechos de Autor este repo lo cree con el fin de hacer un seguimiento de los ejercicio que voy haciendo ojala vaya a final aura?
+El god que cree este repo es de :  https://github.com/EliasMartinMouescaUTN
+
 # EjerciciosByDonkForSO
