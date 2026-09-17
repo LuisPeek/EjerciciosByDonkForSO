@@ -2,7 +2,8 @@
 
 #include "../semaphores_wrap.h"
 
-// TODO: Volver a realizar el ejercicio para que ejecuten: A,B,B,C,A,B,B,C…
+// TODO: Volver a realizar el ejercicio para que ejecuten:
+//  A,B,B,C,A,B,B,C…
 // -----------------------------------------
 
 // - Globals -

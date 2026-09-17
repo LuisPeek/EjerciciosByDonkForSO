@@ -2,42 +2,56 @@
 
 #include "../semaphores_wrap.h"
 
-// TODO: sean dos procesos A y B, 
-// sincronizarlos para que se ejecuten de manera alternada: A,B,A,B…
+// TODO: Volver a realizar el ejercicio para que ejecuten: A,B,B,C,A,B,B,C…
 // -----------------------------------------
 
 // - Globals -
 sem_t semA;
 sem_t semB;
-
+sem_t semC;
 
 void setup() {
     init(semA, 1);
-    init(semB,0);
+    init(semB, 0);
+    init(semC, 0);
 }
 
 void* procesoA(void* _) {
-    
     while(1){
         wait(semA);
-        //SECCION CRITICA 
-        printf("===PROCESO A=== \n");
+
+        printf("A\n");
+
         signal(semB);
-        // varB  = varB + varA;
-        
+        signal(semB);
     }
+
 }
 
 void* procesoB(void* _) {
-    int e =2;
     while(1){
-       // 
-       // SECCCION CRITICA
         wait(semB);
-         printf("===PROCESO B=== \n");
+
+        printf("B\n");
+
+        signal(semC);
+    }
+}
+
+void* procesoC(void* _) {
+    while(1){
+        wait(semC);
+        wait(semC);
+
+        printf("C\n");
+
         signal(semA);
     }
 }
+
+
+
+
 
 
 
@@ -47,9 +61,11 @@ int main() {
 
     create(a, procesoA);
     create(b, procesoB);
+    create(c, procesoC);
 
     join(a);
     join(b);
+    join(c);
 
     return 0;
 }

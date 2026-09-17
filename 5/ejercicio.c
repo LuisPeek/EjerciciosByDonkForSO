@@ -2,7 +2,8 @@
 
 #include "../semaphores_wrap.h"
 
-// TODO: Sean los procesos A, B y C, sincronizarlos para que ejecuten de manera alternada: A,B,C,A,B,C…
+// TODO: Sean los procesos A, B y C, 
+// sincronizarlos para que ejecuten de manera alternada: A,B,C,A,B,C…
 // -----------------------------------------
 
 // - Globals -
